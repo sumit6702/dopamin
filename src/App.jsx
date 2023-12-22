@@ -8,13 +8,12 @@ import "./App.css";
 import Game from "./pages/Game";
 
 function App() {
-
   return (
     <>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/game/:name/:id" element={<Game />} />
+        <Route path="/dopamin" element={<Home />} />
+        <Route path="/dopamin/game/:name/:id" element={<Game />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
       <Footer />
