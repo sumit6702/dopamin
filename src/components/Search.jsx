@@ -84,7 +84,7 @@ const Search = () => {
                 onClick={() => setSearch("")}
                 className=" mb-2 bg-gray-200 dark:bg-slate-700 rounded-xl hover:bg-gray-900 hover:text-white">
                 <Link
-                  to={`/game/${game?.gameName}/${game?.gameId}`}
+                  to={`/dopamin/game/${game?.gameName}/${game?.gameId}`}
                   className="flex gap-x-2 font-medium py-2 px-2">
                   <img
                     className="rounded-full w-6 h-6"
