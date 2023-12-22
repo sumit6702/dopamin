@@ -173,7 +173,10 @@ const Game = () => {
       <div className="px-8 py-6">
         Website:{" "}
         {(
-          <a className="underline" href={game?.website} target="_blank">
+          <a
+            className="underline whitespace-break-spaces"
+            href={game?.website}
+            target="_blank">
             {game?.website}
           </a>
         ) || "N/A"}
