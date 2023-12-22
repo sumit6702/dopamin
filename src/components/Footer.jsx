@@ -1,18 +1,12 @@
 import React from "react";
+import Logo from "./Logo";
 
 const Footer = () => {
   return (
     <footer className=" p-4 bg-white shadow md:px-6 md:py-8 dark:bg-gray-900">
       <div className="sm:flex sm:items-center sm:justify-between">
-        <a href="#" target="_blank" className="flex items-center mb-4 sm:mb-0">
-          <img
-            src="https://flowbite.com/docs/images/logo.svg"
-            className="mr-4 h-8"
-            alt="Flowbite Logo"
-          />
-          <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
-            DopaMin
-          </span>
+        <a href="/dopamin" target="_blank" className="flex items-center mb-4 sm:mb-0">
+          <Logo width={128} />
         </a>
         <ul className="flex flex-wrap items-center mb-6 sm:mb-0">
           <li>
