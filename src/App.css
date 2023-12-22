@@ -1,0 +1,64 @@
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  padding: 2rem 0;
+}
+
+#screenshots {
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* border-radius: 2rem; */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fff !important;
+}
+
+.swiper-pagination {
+  background-color: #ffffff11;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  bottom: 0px !important;
+  backdrop-filter: blur(4px);
+}
+
+.swiper-button-prev {
+  height: 100% !important;
+  top: 0px !important;
+  left: 0px !important;
+  padding: 0 3rem !important;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.7506536061690301) 0%,
+    rgba(0, 0, 0, 0.08958918039872199) 85%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  margin: auto 0 !important;
+}
+
+.swiper-button-next{
+  height: 100% !important;
+  top: 0px !important;
+  right: 0px !important;
+  padding: 0 3rem !important;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    270deg,
+    rgba(0, 0, 0, 0.7506536061690301) 0%,
+    rgba(0, 0, 0, 0.08958918039872199) 85%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  margin: auto 0 !important;
+}

@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/******************************************/
+
+body {
+  font-family: "Roboto Mono", monospace;
+}
+
+/* Variable Button Sizes */
+.btn_xs{
+  @apply px-2 py-1;
+}
+
+.btn_sm{
+  @apply px-3 py-2;
+}
+
+.btn_md{
+  @apply px-4 py-2;
+}
+
+.btn_lg{
+  @apply px-6 py-3;
+}
+
+.btn_xl{
+  @apply px-8 py-4;
+}
+
+.btn_2xl{
+  @apply px-10 py-5;
+}
+
+.btn_3xl{
+  @apply px-12 py-6;
+}
+
+.btn_primary{
+  @apply bg-blue-500 text-white;
+  @apply hover:bg-blue-600 border-2 border-transparent hover:border-blue-400;
+}
+
+.btn_secondary{
+  @apply bg-gray-500 text-white;
+  @apply hover:bg-gray-600 border-2 border-transparent hover:border-gray-400;
+}
+
+.btn_primary_outline{
+  @apply border-2 border-blue-500 text-blue-500;
+  @apply hover:bg-blue-500 hover:text-white;
+}
+
+.btn_secondary_outline{
+  @apply border-2 border-gray-500 text-gray-500;
+  @apply hover:bg-gray-500 hover:text-white;
+}
+
+.btn_danger{
+  @apply bg-red-500 text-white;
+  @apply hover:bg-red-600 border-2 border-transparent hover:border-red-400;
+}
+
+.btn_danger_outline{
+  @apply border-2 border-red-500 text-red-500;
+  @apply hover:bg-red-500 hover:text-white;
+}
+
+/* Themes */
+
+.ligth{
+  @apply bg-white text-gray-900 border-gray-900  ;
+}
+
+.dark{
+  @apply bg-gray-900 text-white border-gray-900;
+}
+
+
