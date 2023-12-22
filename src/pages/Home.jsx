@@ -64,7 +64,7 @@ const Home = () => {
     <main className="md:flex bg-white dark:bg-gray-900">
       <div className="">
         <Heading heading="Popular Games" />
-        <div className="cards grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-8 mx-6 bg-white dark:bg-gray-900">
+        <div className="cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-8 mx-6 bg-white dark:bg-gray-900">
           {games.map((game) => (
             <Card
               key={game.gameId}
@@ -77,67 +77,67 @@ const Home = () => {
           ))}
         </div>
       </div>
-      <div className="w-1/4">
+      <div className="lg:w-1/4 mx-10 mt-12 lg:m-0 ">
         <Heading heading="Categories" />
         <div>
           <ul className="text-lg dark:text-white border-2 rounded-lg p-4">
             <li>
-              <Link className="block px-2 py-1 underline" to="/action">
+              <Link className="block px-2 py-1 underline" to="/dopamin/action">
                 Action
               </Link>
             </li>
             <li>
-              <Link className="block px-2 py-1 underline" to="/adventure">
+              <Link className="block px-2 py-1 underline" to="/dopamin/adventure">
                 Adventure
               </Link>
             </li>
             <li>
-              <Link className="block px-2 py-1 underline" to="/casual">
+              <Link className="block px-2 py-1 underline" to="/dopamin/casual">
                 Casual
               </Link>
             </li>
             <li>
-              <Link className="block px-2 py-1 underline" to="/arcade">
+              <Link className="block px-2 py-1 underline" to="/dopamin/arcade">
                 Arcade
               </Link>
             </li>
             <li>
-              <Link className="block px-2 py-1 underline" to="/puzzle">
+              <Link className="block px-2 py-1 underline" to="/dopamin/puzzle">
                 Puzzle
               </Link>
             </li>
             <li>
-              <Link className="block px-2 py-1 underline" to="/racing">
+              <Link className="block px-2 py-1 underline" to="/dopamin/racing">
                 Racing
               </Link>
             </li>
             <li>
-              <Link className="block px-2 py-1 underline" to="/simulation">
+              <Link className="block px-2 py-1 underline" to="/dopamin/simulation">
                 Simulation
               </Link>
             </li>
             <li>
-              <Link className="block px-2 py-1 underline" to="/sports">
+              <Link className="block px-2 py-1 underline" to="/dopamin/sports">
                 Sports
               </Link>
             </li>
             <li>
-              <Link className="block px-2 py-1 underline" to="/strategy">
+              <Link className="block px-2 py-1 underline" to="/dopamin/strategy">
                 Strategy
               </Link>
             </li>
             <li>
-              <Link className="block px-2 py-1 underline" to="/shooter">
+              <Link className="block px-2 py-1 underline" to="/dopamin/shooter">
                 Shooter
               </Link>
             </li>
             <li>
-              <Link className="block px-2 py-1 underline" to="/fighting">
+              <Link className="block px-2 py-1 underline" to="/dopamin/fighting">
                 Fighting
               </Link>
             </li>
             <li>
-              <Link className="block px-2 py-1 underline" to="/mechanical">
+              <Link className="block px-2 py-1 underline" to="/dopamin/mechanical">
                 Mechanical
               </Link>
             </li>
@@ -149,7 +149,7 @@ const Home = () => {
                 <li key={game?.gameId}>
                   <Link
                     className="flex gap-x-1 p-2 underline"
-                    to={`/game/${game?.gameName}/${game?.gameId}`}>
+                    to={`/dopamin/game/${game?.gameName}/${game?.gameId}`}>
                     <img
                       className="w-6 h-6 rounded-full"
                       src={

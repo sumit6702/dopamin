@@ -79,7 +79,7 @@ const Logo = ({width}) => {
                                   opacity="1"
                                   transform="matrix(1,0,0,1,0,0)"
                                   fill="white"
-                                  class="wordmark-text-0"
+                                  className="wordmark-text-0"
                                   id="SvgjsPath1156"></path>
                               </svg>
                             </g>
@@ -108,8 +108,8 @@ const Logo = ({width}) => {
         y1="0.578"
         y2="0.595"
         id="0b4d6ef2-3f48-46ed-9d5a-19177ebf4390">
-        <stop stop-color="#6ee2f5" offset="0"></stop>
-        <stop stop-color="#6454f0" offset="1"></stop>
+        <stop stopColor="#6ee2f5" offset="0"></stop>
+        <stop stopColor="#6454f0" offset="1"></stop>
       </linearGradient>
       <rect
         width="395.5199890136719"

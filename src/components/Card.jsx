@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Card = ({ gameName, gameImg, gameYear, gameRating, gameKey }) => {
   return (
-    <Link to={`/game/${gameName}/${gameKey}`}>
+    <Link to={`/dopamin/game/${gameName}/${gameKey}`}>
       <div className="max-w-[16rem] rounded-md mx-auto cursor-pointer hover:scale-105 transition-all hover:bg-gray-200 dark:hover:bg-gray-700 border-2 border-gray-600 h-full">
         <div className="flex w-full h-72">
           <img

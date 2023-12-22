@@ -68,8 +68,8 @@ const Game = () => {
 
   return (
     <main className="bg-white dark:bg-gray-900 dark:text-white bg-opacity-50 backdrop-blur-sm">
-      <div className="flex px-8 pt-4 pb-1">
-        <div className="flex w-full max-w-[215px] h-72">
+      <div className="lg:flex px-8 pt-4 pb-1">
+        <div className="flex mx-auto w-full max-w-[215px] h-72">
           <img
             className="w-full h-auto object-cover shadow"
             src={
@@ -80,7 +80,7 @@ const Game = () => {
             alt={game?.name}
           />
         </div>
-        <div className="p-4 md:p-8 dark:text-gray-100">
+        <div className="p-4 lg:p-8 dark:text-gray-100">
           <h1 className="mb-6 text-4xl font-bold">
             {game?.name}{" "}
             <span className="text-base uppercase px-1 border-2 dark:border-white dark:bg-blue-900 backdrop-blur dark:bg-opacity-30 dark:text-white">
@@ -120,7 +120,7 @@ const Game = () => {
         </p>
       </div>
       <div
-        className="border-4 dark:text-white border-gray-900 dark:border-white"
+        className="border-4 dark:text-white border-gray-900 dark:border-whit0 px-6 lg:px-2"
         id="screenshots">
         {gameScreenshots.length === 0 ? (
           <h1 className="text-center">No Screenshots</h1>
@@ -140,8 +140,8 @@ const Game = () => {
             </span>
           </div>
         ) : (
-          <div className="flex gap-x-3 leading-6">
-            <div className="flex-shrink-0 w-1/2 whitespace-break-spaces max-h-72 overflow-y-scroll rounded backdrop-blur-md bg-blue-400 bg-opacity-10 border-2 border-gray-800">
+          <div className="lg:flex gap-x-3 leading-6">
+            <div className="flex-shrink-0 lg:w-1/2 mb-3 lg:mb-0 whitespace-break-spaces max-h-72 overflow-y-scroll rounded-md backdrop-blur-md bg-blue-400 bg-opacity-10 border-2 border-gray-800">
               {game?.platforms
                 .filter((p) => p?.platform?.name === "PC")
                 .map((p, i) =>
@@ -154,7 +154,7 @@ const Game = () => {
                   )
                 )}
             </div>
-            <div className="flex-shrink-0 w-1/2 whitespace-break-spaces max-h-72 overflow-y-scroll rounded backdrop-blur-md bg-blue-400 bg-opacity-10 border-2 border-gray-800">
+            <div className="flex-shrink-0 lg:w-1/2 whitespace-break-spaces max-h-72 overflow-y-scroll rounded-md backdrop-blur-md bg-blue-400 bg-opacity-10 border-2 border-gray-800">
               {game?.platforms
                 .filter((p) => p?.platform?.name === "PC")
                 .map((p, i) =>

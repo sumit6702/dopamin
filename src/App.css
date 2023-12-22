@@ -26,18 +26,18 @@ main {
 }
 
 .swiper-pagination {
-  background-color: #ffffff11;
-  padding-bottom: 12px;
-  padding-top: 12px;
+  background-color: #ffffff28;
+  padding-bottom: 6px;
+  padding-top: 6px;
   bottom: 0px !important;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(2px);
 }
 
 .swiper-button-prev {
   height: 100% !important;
   top: 0px !important;
   left: 0px !important;
-  padding: 0 3rem !important;
+  padding: 0 2rem !important;
   background: rgb(0, 0, 0);
   background: linear-gradient(
     90deg,
@@ -46,13 +46,14 @@ main {
     rgba(0, 0, 0, 0) 100%
   );
   margin: auto 0 !important;
+  opacity: 50%;
 }
 
 .swiper-button-next{
   height: 100% !important;
   top: 0px !important;
   right: 0px !important;
-  padding: 0 3rem !important;
+  padding: 0 2rem !important;
   background: rgb(0, 0, 0);
   background: linear-gradient(
     270deg,
@@ -61,4 +62,5 @@ main {
     rgba(0, 0, 0, 0) 100%
   );
   margin: auto 0 !important;
+  opacity: 50%;
 }
